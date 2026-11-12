@@ -1,0 +1,321 @@
+{
+  "as_of": "2026-11-13T15:00:00+00:00",
+  "base_health": {
+    "error": "HTTP Error 403: Forbidden",
+    "reachable": false,
+    "rpc_url": "https://mainnet.base.org"
+  },
+  "data_source": "fixture:base_snapshot.fixture.json",
+  "decisions": [
+    {
+      "action": "BUY",
+      "amount_usd": "934.708000000000000000000000",
+      "current_weight": "0.1196125749728661436554937674",
+      "guardrails": [],
+      "reasons": [
+        "weight 11.96% vs target 20.00% (drift -8.04%); NAV reference 231.80 (age 1.0h, multiplier 1)",
+        "buy 934.708000000000000000000000 USD toward target (per-run cap 1162.754 USD; cash budget 2958.843538800000000000000000 USD)"
+      ],
+      "reference_price": "231.80",
+      "status": "SIMULATED",
+      "symbol": "AAPLc",
+      "target_weight": "0.2",
+      "token_quantity": "4.026350465673362260319615486"
+    },
+    {
+      "action": "HOLD",
+      "amount_usd": "0",
+      "current_weight": "0",
+      "guardrails": [],
+      "reasons": [
+        "weight 0.00% vs target 0.00% (drift 0.00%); NAV reference 238.15 (age 1.0h, multiplier 1)",
+        "inside the 3.00% tolerance band; no action"
+      ],
+      "reference_price": "238.15",
+      "status": "SIMULATED",
+      "symbol": "AMZNc",
+      "target_weight": "0",
+      "token_quantity": "0"
+    },
+    {
+      "action": "BLOCKED",
+      "amount_usd": "0",
+      "current_weight": "0",
+      "guardrails": [
+        "paused_features"
+      ],
+      "reasons": [
+        "token reports paused features ['MINT']; no trading"
+      ],
+      "reference_price": "262.10",
+      "status": "SIMULATED",
+      "symbol": "COINc",
+      "target_weight": "0",
+      "token_quantity": "0"
+    },
+    {
+      "action": "BUY",
+      "amount_usd": "470.455600000000000000000000",
+      "current_weight": "0.09953954146792872783065033532",
+      "guardrails": [],
+      "reasons": [
+        "weight 9.95% vs target 14.00% (drift -4.05%); NAV reference 289.35 (age 2.0h, multiplier 1.02)",
+        "buy 470.455600000000000000000000 USD toward target (per-run cap 1162.754 USD; cash budget 2958.843538800000000000000000 USD)"
+      ],
+      "reference_price": "289.35",
+      "status": "SIMULATED",
+      "symbol": "GOOGLc",
+      "target_weight": "0.14",
+      "token_quantity": "1.623469754759600706077569321"
+    },
+    {
+      "action": "HOLD",
+      "amount_usd": "0",
+      "current_weight": "0.1027216418950182067746058066",
+      "guardrails": [],
+      "reasons": [
+        "weight 10.27% vs target 10.00% (drift 0.27%); NAV reference 597.20 (age 0.5h, multiplier 1)",
+        "inside the 3.00% tolerance band; no action"
+      ],
+      "reference_price": "597.20",
+      "status": "SIMULATED",
+      "symbol": "METAc",
+      "target_weight": "0.1",
+      "token_quantity": "0"
+    },
+    {
+      "action": "HOLD",
+      "amount_usd": "0",
+      "current_weight": "0.1322136926641404802735574335",
+      "guardrails": [],
+      "reasons": [
+        "weight 13.22% vs target 16.00% (drift -2.78%); NAV reference 512.44 (age 3.0h, multiplier 1)",
+        "inside the 3.00% tolerance band; no action"
+      ],
+      "reference_price": "512.44",
+      "status": "SIMULATED",
+      "symbol": "MSFTc",
+      "target_weight": "0.16",
+      "token_quantity": "0"
+    },
+    {
+      "action": "SELL",
+      "amount_usd": "440.6611999999999999999999999",
+      "current_weight": "0.2578980592627503324004905595",
+      "guardrails": [],
+      "reasons": [
+        "weight 25.79% vs target 22.00% (drift 3.79%); NAV reference 187.42 (age 1.0h, multiplier 1)",
+        "sell 440.661200000000000000000000 USD toward target (capped by per-run cap 1162.754 USD and holdings 2998.72 USD)"
+      ],
+      "reference_price": "187.42",
+      "status": "SIMULATED",
+      "symbol": "NVDAc",
+      "target_weight": "0.22",
+      "token_quantity": "2.354728336235010930652728639"
+    },
+    {
+      "action": "BLOCKED",
+      "amount_usd": "0",
+      "current_weight": "0",
+      "guardrails": [
+        "blocked_symbol"
+      ],
+      "reasons": [
+        "SPCXc is on the user's blocked-symbol list"
+      ],
+      "reference_price": null,
+      "status": "SIMULATED",
+      "symbol": "SPCXc",
+      "target_weight": "0",
+      "token_quantity": "0"
+    },
+    {
+      "action": "BLOCKED",
+      "amount_usd": "0",
+      "current_weight": "0.02140607557574517051758153487",
+      "guardrails": [
+        "stale_nav_no_buy"
+      ],
+      "reasons": [
+        "weight 2.14% vs target 8.00% (drift -5.86%); NAV reference 248.90 (age 48.0h, multiplier 1)",
+        "NAV is stale (age 48.0h > limit 24h); buys are refused on stale data"
+      ],
+      "reference_price": "248.90",
+      "status": "SIMULATED",
+      "symbol": "TSLAc",
+      "target_weight": "0.08",
+      "token_quantity": "0"
+    }
+  ],
+  "disclaimers": [
+    "Prototype for the Base Stocks Maxxing Builder Quest (Agentic Stock Finance track).",
+    "Not investment advice. Tokenized stocks are securities; eligibility and local law are the user's responsibility.",
+    "NAV values are Chainlink-based reference values, not live bid/ask or execution prices.",
+    "All fills in this build are SIMULATED. No wallet, no keys, no transaction was signed or broadcast."
+  ],
+  "fills": [
+    {
+      "assumptions": {
+        "fee_bps": "10",
+        "note": "NAV is a reference value, not an executable quote; no transaction was signed or broadcast.",
+        "slippage_bps": "15"
+      },
+      "fee_usd": "0.440661200000000000000000",
+      "gross_usd": "440.6611999999999999999999999",
+      "modelled_fill_price": "187.138870",
+      "realized_pnl_usd": "34.47056199946061446240430969",
+      "reference_nav": "187.42",
+      "share_equivalents": "2.354728336235010930652728639",
+      "side": "SELL",
+      "status": "SIMULATED",
+      "symbol": "NVDAc",
+      "token_quantity": "2.354728336235010930652728639"
+    },
+    {
+      "assumptions": {
+        "fee_bps": "10",
+        "note": "NAV is a reference value, not an executable quote; no transaction was signed or broadcast.",
+        "slippage_bps": "15"
+      },
+      "fee_usd": "0.934708000000000000000000",
+      "gross_usd": "934.708000000000000000000000",
+      "modelled_fill_price": "232.147700",
+      "realized_pnl_usd": "0",
+      "reference_nav": "231.80",
+      "share_equivalents": "4.026350465673362260319615486",
+      "side": "BUY",
+      "status": "SIMULATED",
+      "symbol": "AAPLc",
+      "token_quantity": "4.026350465673362260319615486"
+    },
+    {
+      "assumptions": {
+        "fee_bps": "10",
+        "note": "NAV is a reference value, not an executable quote; no transaction was signed or broadcast.",
+        "slippage_bps": "15"
+      },
+      "fee_usd": "0.470455600000000000000000",
+      "gross_usd": "470.455600000000000000000000",
+      "modelled_fill_price": "289.784025",
+      "realized_pnl_usd": "0",
+      "reference_nav": "289.35",
+      "share_equivalents": "1.655939149854792720199120707",
+      "side": "BUY",
+      "status": "SIMULATED",
+      "symbol": "GOOGLc",
+      "token_quantity": "1.623469754759600706077569321"
+    }
+  ],
+  "mode": "simulate",
+  "portfolio_after": {
+    "assets": {
+      "AAPLc": {
+        "avg_cost_per_token": "236.8466979216566186666043419",
+        "multiplier": "1",
+        "share_equivalents": "10.02635046567336226031961549",
+        "token_quantity": "10.02635046567336226031961549",
+        "value_usd": "2324.108037943085371942086871",
+        "weight": "0.1999589189183318700996799362"
+      },
+      "GOOGLc": {
+        "avg_cost_per_token": "279.2680797599730042807655439",
+        "multiplier": "1.02",
+        "share_equivalents": "5.735939149854792720199120707",
+        "token_quantity": "5.623469754759600706077569321",
+        "value_usd": "1627.150973539690464303544683",
+        "weight": "0.1399949332277450224613537001"
+      },
+      "METAc": {
+        "avg_cost_per_token": "640",
+        "multiplier": "1",
+        "share_equivalents": "2",
+        "token_quantity": "2",
+        "value_usd": "1194.40",
+        "weight": "0.1027624055581465484943759966"
+      },
+      "MSFTc": {
+        "avg_cost_per_token": "498",
+        "multiplier": "1",
+        "share_equivalents": "3",
+        "token_quantity": "3",
+        "value_usd": "1537.32",
+        "weight": "0.1322661598397939148789133515"
+      },
+      "NVDAc": {
+        "avg_cost_per_token": "172.50",
+        "multiplier": "1",
+        "share_equivalents": "13.64527166376498906934727136",
+        "token_quantity": "13.64527166376498906934727136",
+        "value_usd": "2557.396815222834251377065598",
+        "weight": "0.2200303488772950972329338664"
+      },
+      "TSLAc": {
+        "avg_cost_per_token": "262",
+        "multiplier": "1",
+        "share_equivalents": "1",
+        "token_quantity": "1",
+        "value_usd": "248.90",
+        "weight": "0.02141457028082943395868233887"
+      }
+    },
+    "cash_usd": "2133.651775200000000000000000",
+    "cash_weight": "0.1835726632978581128740608107",
+    "total_value_usd": "11622.92760190561008762269715"
+  },
+  "portfolio_before": {
+    "assets": {
+      "AAPLc": {
+        "avg_cost_per_token": "240",
+        "multiplier": "1",
+        "share_equivalents": "6",
+        "token_quantity": "6",
+        "value_usd": "1390.80",
+        "weight": "0.1249871939350476385616227846"
+      },
+      "GOOGLc": {
+        "avg_cost_per_token": "275",
+        "multiplier": "1.02",
+        "share_equivalents": "4.08",
+        "token_quantity": "4",
+        "value_usd": "1157.40",
+        "weight": "0.1040122075499166931774677961"
+      },
+      "METAc": {
+        "avg_cost_per_token": "640",
+        "multiplier": "1",
+        "share_equivalents": "2",
+        "token_quantity": "2",
+        "value_usd": "1194.40",
+        "weight": "0.1073372910814070315631307549"
+      },
+      "MSFTc": {
+        "avg_cost_per_token": "498",
+        "multiplier": "1",
+        "share_equivalents": "3",
+        "token_quantity": "3",
+        "value_usd": "1537.32",
+        "weight": "0.1381545247197493785688481012"
+      },
+      "NVDAc": {
+        "avg_cost_per_token": "172.50",
+        "multiplier": "1",
+        "share_equivalents": "16",
+        "token_quantity": "16",
+        "value_usd": "2998.72",
+        "weight": "0.2694863375013704736177088557"
+      },
+      "TSLAc": {
+        "avg_cost_per_token": "262",
+        "multiplier": "1",
+        "share_equivalents": "1",
+        "token_quantity": "1",
+        "value_usd": "248.90",
+        "weight": "0.02236792678345797903220298467"
+      }
+    },
+    "cash_usd": "2600",
+    "cash_weight": "0.2336545184290508054790187229",
+    "total_value_usd": "11127.54"
+  },
+  "run_id": "c758c236958585e9"
+}
